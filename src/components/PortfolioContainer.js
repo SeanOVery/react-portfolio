@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import Blog from './pages/Blog';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Navigation from './Navigation';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('AboutMe');
 
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
+    if (currentPage === 'AboutMe') {
+      return <AboutMe />;
     }
-    if (currentPage === 'About') {
-      return <About />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Resume') {
+      return <Resume />;
     }
     return <Contact />;
   };
