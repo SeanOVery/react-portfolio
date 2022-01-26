@@ -1,16 +1,15 @@
 import React from 'react';
+import '../styles/Footer.css';
 
 function Footer() {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
+    <div className='footer'>
         <a
           href="https://github.com/SeanOVery"
         >
           Github
         </a>
-      </li>
-    </ul>
+    </div>
   );
 }
 

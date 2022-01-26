@@ -4,6 +4,7 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Navigation from './Navigation';
+import '../styles/Header.css';
 
 export default function Header() {
   const [currentPage, setCurrentPage] = useState('AboutMe');
@@ -25,7 +26,9 @@ export default function Header() {
 
   return (
     <div>
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+        <header className="header">
+          <h1>Sean O'Very</h1>  <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+        </header>
       {renderPage()}
     </div>
   );
