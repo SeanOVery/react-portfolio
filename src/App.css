@@ -1,0 +1,8 @@
+.mainDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: flex-start; 
+  
+}
