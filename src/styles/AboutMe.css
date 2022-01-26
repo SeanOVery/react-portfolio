@@ -1,4 +1,5 @@
 .aboutMeContainer {
-  background-color: rgba(75, 142, 196, 0.7) !important;
+  background-color: rgba(30, 30, 30, 1) !important;
   height: 85vh;
+  color: rgba(252, 252, 252, 0.692);
 }
